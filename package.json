@@ -1,8 +1,11 @@
 {
   "name": "edtunnel",
   "version": "1.0.0",
-  "description": "A tunnel for the edgetunnel project to allow deployed applications to cloudflare pages and workers to be accessed via a custom domain.",
+  "description": "A tunnel for the edgetunnel project...",
   "main": "_worker.js",
+  "engines": {
+    "node": "18.x"
+  },
   "scripts": {
     "deploy": "wrangler deploy",
     "build": "wrangler deploy --dry-run",
