@@ -1,20 +1,16 @@
 {
   "name": "edtunnel",
   "version": "1.0.0",
-  "description": "A tunnel for the edgetunnel project...",
+  "description": "VLESS tunnel for Cloudflare Pages",
   "main": "_worker.js",
-  "engines": {
-    "node": ">=18.0.0"
-  },
   "scripts": {
     "deploy": "wrangler deploy",
-    "build": "wrangler deploy --dry-run",
+    "build": "mkdir -p dist && touch dist/_worker.js",
     "dev": "wrangler dev --remote"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@cloudflare/workers-types": "^4.20230710.1",
     "wrangler": "3.2.0"
   }
 }
